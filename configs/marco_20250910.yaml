@@ -14,7 +14,7 @@ pages:
     content: |
       You will hear multiple versions of the SAME musical phrase.
       Rate each condition on a 0–100 scale according to the question shown on that page.
-      • "Timbre similarity": focus on tone colour; ignore small loudness differences.
+      • "Content preservation": is the melody/rhythm/phrasing preserved vs the content (ctx)?
       • "Overall audio quality": judge artefacts (noise, distortion, warbles), clarity.
       • "Realism": does it sound like a real performance of the target instrument?
       Use good headphones in a quiet room. You can replay and adjust sliders anytime.
@@ -22,15 +22,16 @@ pages:
   # ========================= Clarinet → Strings =========================
   # ----- Take 1 -----
   - type: mushra
-    id: Clarinet2Strings-1-timbre
-    name: Clarinet→Strings (take 1) — Timbre similarity
+    id: Clarinet2Strings-1-content
+    name: Clarinet→Strings (take 1) — Content preservation
     showWaveform: true
-    reference: audio_data/Clarinet2Strings/1/ref_aligned.wav
+    reference: audio_data/Clarinet2Strings/1/ctx_aligned.wav
     createAnchor35: false
     createAnchor70: false
     content: |
-      Rate **timbre similarity to the reference** (ignore melody/rhythm; they are the same).
-      0 = completely different timbre • 100 = identical timbre to the reference
+      Rate **content (melody/rhythm/phrasing) preservation** relative to the CONTENT example above.
+      Ignore timbre; focus on whether the musical content is preserved.
+      0 = not preserved at all • 100 = perfectly preserved
     stimuli:
       sys_bddm19: audio_data/Clarinet2Strings/1/bddm19_aligned.wav
       sys_wg6:    audio_data/Clarinet2Strings/1/wg6_aligned.wav
@@ -68,15 +69,15 @@ pages:
 
   # ----- Take 2 -----
   - type: mushra
-    id: Clarinet2Strings-2-timbre
-    name: Clarinet→Strings (take 2) — Timbre similarity
+    id: Clarinet2Strings-2-content
+    name: Clarinet→Strings (take 2) — Content preservation
     showWaveform: true
-    reference: audio_data/Clarinet2Strings/2/ref_aligned.wav
+    reference: audio_data/Clarinet2Strings/2/ctx_aligned.wav
     createAnchor35: false
     createAnchor70: false
     content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
+      Rate **content preservation** relative to the CONTENT example (melody/rhythm/phrasing).
+      Ignore timbre mismatch. 0 = none • 100 = perfect
     stimuli:
       sys_bddm19: audio_data/Clarinet2Strings/2/bddm19_aligned.wav
       sys_wg6:    audio_data/Clarinet2Strings/2/wg6_aligned.wav
@@ -114,15 +115,15 @@ pages:
 
   # ----- Take 3 -----
   - type: mushra
-    id: Clarinet2Strings-3-timbre
-    name: Clarinet→Strings (take 3) — Timbre similarity
+    id: Clarinet2Strings-3-content
+    name: Clarinet→Strings (take 3) — Content preservation
     showWaveform: true
-    reference: audio_data/Clarinet2Strings/3/ref_aligned.wav
+    reference: audio_data/Clarinet2Strings/3/ctx_aligned.wav
     createAnchor35: false
     createAnchor70: false
     content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
+      Rate **content preservation** vs the CONTENT example (melody/rhythm/phrasing).
+      0 = none • 100 = perfect
     stimuli:
       sys_bddm19: audio_data/Clarinet2Strings/3/bddm19_aligned.wav
       sys_wg6:    audio_data/Clarinet2Strings/3/wg6_aligned.wav
@@ -154,450 +155,4 @@ pages:
       Rate **realism/naturalness as STRINGS**, independent of reference similarity.
       0 = artificial • 100 = very realistic
     stimuli:
-      sys_bddm19: audio_data/Clarinet2Strings/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Clarinet2Strings/3/wg6_aligned.wav
-      sys_gen:    audio_data/Clarinet2Strings/3/gen_aligned.wav
-
-  # ========================= Piano → Vibraphone =========================
-  # ----- Take 1 -----
-  - type: mushra
-    id: Piano2Vibraphone-1-timbre
-    name: Piano→Vibraphone (take 1) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/1/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/1/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-1-quality
-    name: Piano→Vibraphone (take 1) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/1/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/1/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-1-realism
-    name: Piano→Vibraphone (take 1) — Realism (Vibraphone)
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as VIBRAPHONE**, regardless of timbre closeness.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/1/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/1/gen_aligned.wav
-
-  # ----- Take 2 -----
-  - type: mushra
-    id: Piano2Vibraphone-2-timbre
-    name: Piano→Vibraphone (take 2) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/2/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/2/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-2-quality
-    name: Piano→Vibraphone (take 2) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/2/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/2/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-2-realism
-    name: Piano→Vibraphone (take 2) — Realism (Vibraphone)
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as VIBRAPHONE**, independent of reference closeness.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/2/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/2/gen_aligned.wav
-
-  # ----- Take 3 -----
-  - type: mushra
-    id: Piano2Vibraphone-3-timbre
-    name: Piano→Vibraphone (take 3) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/3/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/3/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-3-quality
-    name: Piano→Vibraphone (take 3) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/3/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/3/gen_aligned.wav
-
-  - type: mushra
-    id: Piano2Vibraphone-3-realism
-    name: Piano→Vibraphone (take 3) — Realism (Vibraphone)
-    showWaveform: true
-    reference: audio_data/Piano2Vibraphone/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as VIBRAPHONE**, independent of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Piano2Vibraphone/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Piano2Vibraphone/3/wg6_aligned.wav
-      sys_gen:    audio_data/Piano2Vibraphone/3/gen_aligned.wav
-
-  # ========================= Strings → Clarinet =========================
-  # ----- Take 1 -----
-  - type: mushra
-    id: Strings2Clarinet-1-timbre
-    name: Strings→Clarinet (take 1) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/1/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/1/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-1-quality
-    name: Strings→Clarinet (take 1) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/1/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/1/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-1-realism
-    name: Strings→Clarinet (take 1) — Realism (Clarinet)
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as CLARINET**, regardless of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/1/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/1/gen_aligned.wav
-
-  # ----- Take 2 -----
-  - type: mushra
-    id: Strings2Clarinet-2-timbre
-    name: Strings→Clarinet (take 2) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/2/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/2/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-2-quality
-    name: Strings→Clarinet (take 2) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/2/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/2/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-2-realism
-    name: Strings→Clarinet (take 2) — Realism (Clarinet)
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as CLARINET**, independent of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/2/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/2/gen_aligned.wav
-
-  # ----- Take 3 -----
-  - type: mushra
-    id: Strings2Clarinet-3-timbre
-    name: Strings→Clarinet (take 3) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/3/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/3/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-3-quality
-    name: Strings→Clarinet (take 3) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/3/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/3/gen_aligned.wav
-
-  - type: mushra
-    id: Strings2Clarinet-3-realism
-    name: Strings→Clarinet (take 3) — Realism (Clarinet)
-    showWaveform: true
-    reference: audio_data/Strings2Clarinet/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as CLARINET**, independent of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Strings2Clarinet/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Strings2Clarinet/3/wg6_aligned.wav
-      sys_gen:    audio_data/Strings2Clarinet/3/gen_aligned.wav
-
-  # ========================= Vibraphone → Piano =========================
-  # ----- Take 1 -----
-  - type: mushra
-    id: Vibraphone2Piano-1-timbre
-    name: Vibraphone→Piano (take 1) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/1/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/1/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-1-quality
-    name: Vibraphone→Piano (take 1) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/1/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/1/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-1-realism
-    name: Vibraphone→Piano (take 1) — Realism (Piano)
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/1/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as PIANO**, regardless of timbre closeness.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/1/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/1/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/1/gen_aligned.wav
-
-  # ----- Take 2 -----
-  - type: mushra
-    id: Vibraphone2Piano-2-timbre
-    name: Vibraphone→Piano (take 2) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/2/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/2/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-2-quality
-    name: Vibraphone→Piano (take 2) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/2/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/2/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-2-realism
-    name: Vibraphone→Piano (take 2) — Realism (Piano)
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/2/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as PIANO**, independent of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/2/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/2/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/2/gen_aligned.wav
-
-  # ----- Take 3 -----
-  - type: mushra
-    id: Vibraphone2Piano-3-timbre
-    name: Vibraphone→Piano (take 3) — Timbre similarity
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **timbre similarity to the reference**.
-      0 = completely different • 100 = identical
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/3/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/3/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-3-quality
-    name: Vibraphone→Piano (take 3) — Overall audio quality
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **overall audio quality** (artefacts, noise, distortion, phasing, warbles, clarity).
-      0 = very poor • 100 = excellent
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/3/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/3/gen_aligned.wav
-
-  - type: mushra
-    id: Vibraphone2Piano-3-realism
-    name: Vibraphone→Piano (take 3) — Realism (Piano)
-    showWaveform: true
-    reference: audio_data/Vibraphone2Piano/3/ref_aligned.wav
-    createAnchor35: false
-    createAnchor70: false
-    content: |
-      Rate **realism/naturalness as PIANO**, independent of reference similarity.
-      0 = artificial • 100 = very realistic
-    stimuli:
-      sys_bddm19: audio_data/Vibraphone2Piano/3/bddm19_aligned.wav
-      sys_wg6:    audio_data/Vibraphone2Piano/3/wg6_aligned.wav
-      sys_gen:    audio_data/Vibraphone2Piano/3/gen_aligned.wav
-
-  # -------- Finish + quick questionnaire --------
-  - type: finish
-    name: Thank you
-    content: Thank you for participating!
-    popupContent: Your results were sent. Goodbye and have a nice day.
-    showResults: true
-    writeResults: true
-    # questionnaire:
-    #   - type: likert
-    #     name: device
-    #     label: What did you use to listen?
-    #     response:
-    #       - { value: headphones, label: Headphones }
-    #       - { value: in_ear, label: In-ear monitors }
-    #       - { value: speakers, label: External speakers }
-    #       - { value: laptop, label: Laptop speakers }
-    #   - type: likert
-    #     name: env_quietness
-    #     label: How quiet was your environment?
-    #     response:
-    #       - { value: low, label: Noisy }
-    #       - { value: mid, label: Moderate }
-    #       - { value: high, label: Quiet }
-    #   - type: text
-    #     name: comments
-    #     label: Any comments about artifacts or the task?
+      sys_bddm19: aud_
