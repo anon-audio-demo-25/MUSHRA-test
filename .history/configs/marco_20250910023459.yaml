@@ -8,7 +8,7 @@ remoteService: service/write.php
 
 pages:
   # -------- Instructions --------
-  - type: generic
+  - type: training
     id: intro
     name: Instructions
     content: |
@@ -582,22 +582,22 @@ pages:
     popupContent: Your results were sent. Goodbye and have a nice day.
     showResults: true
     writeResults: true
-    # questionnaire:
-    #   - type: likert
-    #     name: device
-    #     label: What did you use to listen?
-    #     response:
-    #       - { value: headphones, label: Headphones }
-    #       - { value: in_ear, label: In-ear monitors }
-    #       - { value: speakers, label: External speakers }
-    #       - { value: laptop, label: Laptop speakers }
-    #   - type: likert
-    #     name: env_quietness
-    #     label: How quiet was your environment?
-    #     response:
-    #       - { value: low, label: Noisy }
-    #       - { value: mid, label: Moderate }
-    #       - { value: high, label: Quiet }
-    #   - type: text
-    #     name: comments
-    #     label: Any comments about artifacts or the task?
+    questionnaire:
+      - type: likert
+        name: device
+        label: What did you use to listen?
+        response:
+          - { value: headphones, label: Headphones }
+          - { value: in_ear, label: In-ear monitors }
+          - { value: speakers, label: External speakers }
+          - { value: laptop, label: Laptop speakers }
+      - type: likert
+        name: env_quietness
+        label: How quiet was your environment?
+        response:
+          - { value: low, label: Noisy }
+          - { value: mid, label: Moderate }
+          - { value: high, label: Quiet }
+      - type: text
+        name: comments
+        label: Any comments about artifacts or the task?

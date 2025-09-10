@@ -1,0 +1,176 @@
+# configs/marco_timbre.yaml
+testname: "Timbre-Transfer MUSHRA"
+testId: mushra_test
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+pages:
+  # -------- Clarinet → Strings --------
+  - type: mushra
+    id: Clarinet2Strings-1
+    name: Clarinet→Strings (take 1)
+    showWaveform: true
+    reference: audio_data/Clarinet2Strings/1/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Clarinet2Strings/1/bddm19_aligned.wav
+      sys_wg6:    audio_data/Clarinet2Strings/1/wg6_aligned.wav
+      sys_gen:    audio_data/Clarinet2Strings/1/gen_aligned.wav
+      # hidden_ref: audio_data/Clarinet2Strings/1/ref_aligned.wav
+
+  - type: mushra
+    id: Clarinet2Strings-2
+    name: Clarinet→Strings (take 2)
+    showWaveform: true
+    reference: audio_data/Clarinet2Strings/2/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Clarinet2Strings/2/bddm19_aligned.wav
+      sys_wg6:    audio_data/Clarinet2Strings/2/wg6_aligned.wav
+      sys_gen:    audio_data/Clarinet2Strings/2/gen_aligned.wav
+      # hidden_ref: audio_data/Clarinet2Strings/2/ref_aligned.wav
+
+  - type: mushra
+    id: Clarinet2Strings-3
+    name: Clarinet→Strings (take 3)
+    showWaveform: true
+    reference: audio_data/Clarinet2Strings/3/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Clarinet2Strings/3/bddm19_aligned.wav
+      sys_wg6:    audio_data/Clarinet2Strings/3/wg6_aligned.wav
+      sys_gen:    audio_data/Clarinet2Strings/3/gen_aligned.wav
+      # hidden_ref: audio_data/Clarinet2Strings/3/ref_aligned.wav
+
+  # -------- Piano → Vibraphone --------
+  - type: mushra
+    id: Piano2Vibraphone-1
+    name: Piano→Vibraphone (take 1)
+    showWaveform: true
+    reference: audio_data/Piano2Vibraphone/1/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Piano2Vibraphone/1/bddm19_aligned.wav
+      sys_wg6:    audio_data/Piano2Vibraphone/1/wg6_aligned.wav
+      sys_gen:    audio_data/Piano2Vibraphone/1/gen_aligned.wav
+      # hidden_ref: audio_data/Piano2Vibraphone/1/ref_aligned.wav
+
+  - type: mushra
+    id: Piano2Vibraphone-2
+    name: Piano→Vibraphone (take 2)
+    showWaveform: true
+    reference: audio_data/Piano2Vibraphone/2/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Piano2Vibraphone/2/bddm19_aligned.wav
+      sys_wg6:    audio_data/Piano2Vibraphone/2/wg6_aligned.wav
+      sys_gen:    audio_data/Piano2Vibraphone/2/gen_aligned.wav
+      # hidden_ref: audio_data/Piano2Vibraphone/2/ref_aligned.wav
+
+  - type: mushra
+    id: Piano2Vibraphone-3
+    name: Piano→Vibraphone (take 3)
+    showWaveform: true
+    reference: audio_data/Piano2Vibraphone/3/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Piano2Vibraphone/3/bddm19_aligned.wav
+      sys_wg6:    audio_data/Piano2Vibraphone/3/wg6_aligned.wav
+      sys_gen:    audio_data/Piano2Vibraphone/3/gen_aligned.wav
+      # hidden_ref: audio_data/Piano2Vibraphone/3/ref_aligned.wav
+
+  # -------- Strings → Clarinet --------
+  - type: mushra
+    id: Strings2Clarinet-1
+    name: Strings→Clarinet (take 1)
+    showWaveform: true
+    reference: audio_data/Strings2Clarinet/1/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Strings2Clarinet/1/bddm19_aligned.wav
+      sys_wg6:    audio_data/Strings2Clarinet/1/wg6_aligned.wav
+      sys_gen:    audio_data/Strings2Clarinet/1/gen_aligned.wav
+      # hidden_ref: audio_data/Strings2Clarinet/1/ref_aligned.wav
+
+  - type: mushra
+    id: Strings2Clarinet-2
+    name: Strings→Clarinet (take 2)
+    showWaveform: true
+    reference: audio_data/Strings2Clarinet/2/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Strings2Clarinet/2/bddm19_aligned.wav
+      sys_wg6:    audio_data/Strings2Clarinet/2/wg6_aligned.wav
+      sys_gen:    audio_data/Strings2Clarinet/2/gen_aligned.wav
+      # hidden_ref: audio_data/Strings2Clarinet/2/ref_aligned.wav
+
+  - type: mushra
+    id: Strings2Clarinet-3
+    name: Strings→Clarinet (take 3)
+    showWaveform: true
+    reference: audio_data/Strings2Clarinet/3/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Strings2Clarinet/3/bddm19_aligned.wav
+      sys_wg6:    audio_data/Strings2Clarinet/3/wg6_aligned.wav
+      sys_gen:    audio_data/Strings2Clarinet/3/gen_aligned.wav
+      # hidden_ref: audio_data/Strings2Clarinet/3/ref_aligned.wav
+
+  # -------- Vibraphone → Piano --------
+  - type: mushra
+    id: Vibraphone2Piano-1
+    name: Vibraphone→Piano (take 1)
+    showWaveform: true
+    reference: audio_data/Vibraphone2Piano/1/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Vibraphone2Piano/1/bddm19_aligned.wav
+      sys_wg6:    audio_data/Vibraphone2Piano/1/wg6_aligned.wav
+      sys_gen:    audio_data/Vibraphone2Piano/1/gen_aligned.wav
+      # hidden_ref: audio_data/Vibraphone2Piano/1/ref_aligned.wav
+
+  - type: mushra
+    id: Vibraphone2Piano-2
+    name: Vibraphone→Piano (take 2)
+    showWaveform: true
+    reference: audio_data/Vibraphone2Piano/2/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Vibraphone2Piano/2/bddm19_aligned.wav
+      sys_wg6:    audio_data/Vibraphone2Piano/2/wg6_aligned.wav
+      sys_gen:    audio_data/Vibraphone2Piano/2/gen_aligned.wav
+      # hidden_ref: audio_data/Vibraphone2Piano/2/ref_aligned.wav
+
+  - type: mushra
+    id: Vibraphone2Piano-3
+    name: Vibraphone→Piano (take 3)
+    showWaveform: true
+    reference: audio_data/Vibraphone2Piano/3/ref_aligned.wav
+    createAnchor35: false
+    createAnchor70: false
+    stimuli:
+      sys_bddm19: audio_data/Vibraphone2Piano/3/bddm19_aligned.wav
+      sys_wg6:    audio_data/Vibraphone2Piano/3/wg6_aligned.wav
+      sys_gen:    audio_data/Vibraphone2Piano/3/gen_aligned.wav
+      # hidden_ref: audio_data/Vibraphone2Piano/3/ref_aligned.wav
+
+  # -------- Finish --------
+  - type: finish
+    name: Thank you
+    content: Thank you for participating!
+    popupContent: Your results were sent. Goodbye and have a nice day.
+    showResults: true
+    writeResults: true
